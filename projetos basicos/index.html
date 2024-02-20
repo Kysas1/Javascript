@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo adição</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        input.botao {
+            width: 100px;
+            background-color: rgb(185, 31, 206);
+            border-radius: 8px;
+
+
+        }
+        input {
+            border: solid 3px black;
+            border-radius: 5px;
+        }
+        div {
+            text-align: center;
+            background-color: rgb(56, 1, 40);
+            color: white;
+            border-radius: 1px;
+            width: 700px;
+            padding-top: 20px;
+        }
+        div.dv2 {
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dv1">
+    <h1>Coloque seus numeros</h1>
+    <input type="number" name="numero1" id="numero1"> +
+    <input type="number" name="numero2" id="numero2">
+    <input class="botao" type="button" value="Somar" onclick="cal()">
+    </div>
+    <div class="dv2" id="res">
+        <p>Resultado</p>
+    </div>
+    <script>
+        function cal() {
+            var numer1 = document.getElementById('numero1')
+            var numer2 = document.getElementById('numero2')
+            var res = document.getElementById('res')
+            var n1 = Number(numer1.value)
+            var n2 = Number(numer2.value)
+            var s = n1 + n2 
+            res.innerHTML = `A soma de ${n1} e de ${n2} deu ${s}`
+        }
+    </script>
+</body>
+</html>
