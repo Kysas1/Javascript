@@ -1,0 +1,12 @@
+div#area {
+    background-color: rgb(5, 124, 5);
+    color: white;
+    height: 300px;
+    width: 300px;
+    line-height: 300px;
+    text-align: center;
+    font-size: 19px;
+    border: black 2px solid;
+    margin: auto;
+    border-radius: 8px;
+}
